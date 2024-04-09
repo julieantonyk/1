@@ -9,7 +9,7 @@ pipeline {
             }
             stage ('Compile') {  
                   steps{
-                    bat label: '', script: 'mvn compile'
+                    bat label: '', script: 'mvn compile -X'
                     echo "test successful";
                     
                 } 
